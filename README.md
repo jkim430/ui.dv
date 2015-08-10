@@ -1,7 +1,7 @@
 DOCUMENTATION
 
 Include script tag with link to file in html. Angular must also be included.
-Inject as dependency into anglar app.
+Inject as dependency into angular app.
 
 Attributes:
 
