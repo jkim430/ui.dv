@@ -1,6 +1,7 @@
 DOCUMENTATION
 
 Attributes:
+
 1. Bar Graph:
 	- data: Array, can just be numbers, or objects with number and string props
 	- width & height: dimensions of grid
