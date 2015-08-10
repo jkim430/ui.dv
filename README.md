@@ -1,5 +1,8 @@
 DOCUMENTATION
 
+Include script tag with link to file in html. Angular must also be included.
+Inject as dependency into anglar app.
+
 Attributes:
 
 1. Bar Graph:
