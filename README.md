@@ -22,7 +22,8 @@ $scope.running = function() {
 console.log('running');  
 }  
 $scope.options = {sideways: true};  
-<bar-graph data="data" fcn="running" options="options"></bar-graph>```  
+<bar-graph data="data" fcn="running" options="options"></bar-graph>
+```  
 
 Include script tag with link to file in html. Angular must also be included.
 Inject as dependency into angular app.
