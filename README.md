@@ -1,4 +1,12 @@
-DOCUMENTATION
+##UI-DV
+
+####What is it?
+UI-DV is an angular data visualization library. It has pre-set directives that are extensive and configurable for easy injection into your app.
+
+####Installation & Setup
+Run ````npm install ui-dv```` and inject "ui-dv" as a dependency into your angular app. Don't forget to include the script tag for ui.dv.js in your html.
+
+####Documentation
 
 Include script tag with link to file in html. Angular must also be included.
 Inject as dependency into angular app.

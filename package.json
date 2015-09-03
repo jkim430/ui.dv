@@ -1,0 +1,19 @@
+{
+    "name": "ui-dv",
+    "version": "1.0.0",
+    "description": "Data visualization with AngularJS",
+    "main": "ui.dv.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jkim430/ui.dv.git"
+    },
+    "author": "Justin Kim",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jkim430/ui.dv/issues"
+    },
+    "homepage": "https://github.com/jkim430/ui.dv"
+}
