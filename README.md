@@ -19,7 +19,7 @@ Example directive:
 ```javascript
 $scope.data = [1,2,3,4];  
 $scope.running = function() {  
-console.log('running');  
+	console.log('running');  
 }  
 $scope.options = {sideways: true};  
 <bar-graph data="data" fcn="running" options="options"></bar-graph>
