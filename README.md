@@ -9,18 +9,23 @@ Run ````npm install ui-dv```` and inject "ui-dv" as a dependency into your angul
 ####Documentation
 Every directive has the following basic attributes: data, fcn, and options.  
 Data is an array - the elements can be simply numbers, or they can be objects with number and string properties.  
-````data = [1,2,3,4] || [{name: 'one', value: 1}, {name: 'two', value: 2}]````  
+```data = [1,2,3,4] || [{name: 'one', value: 1}, {name: 'two', value: 2}]```  
 It does not matter what you call the keys for the objects, but one value has to be a string and the other a number. The strings will be used as labels on the graph.  
 Fcn is a function - this function will be wired as an ng-click for each data element. It will receive the element itself as well as its index in the array.  
 Options is an object - the available options slightly vary depending on the directive. Refer to the table below for details.
 
 
 Example directive:  
-```$scope.data = [1,2,3,4];  
+```$scope.data = [1,2,3,4]; 
+
 $scope.running = function() {  
+
 	console.log('running');  
+
 }  
+
 $scope.options = {sideways: true};  
+
 <bar-graph data="data" fcn="running" options="options"></bar-graph>```
 
 Include script tag with link to file in html. Angular must also be included.
