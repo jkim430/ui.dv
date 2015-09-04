@@ -27,6 +27,8 @@ $scope.options = {sideways: true};
 <bar-graph width="100" height="100" data="data" fcn="running" options="options"></bar-graph>
 ```
 
+#####Options
+
 The following table details out exactly what options each graph type takes:
 
 |Graph Type| Options |
