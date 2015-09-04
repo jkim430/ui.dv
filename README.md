@@ -13,7 +13,7 @@ Every directive has the following basic attributes: data, fcn, and options.
 data = [1,2,3,4] || [{name: 'one', value: 1}, {name: 'two', value: 2}]
 ```  
 - Fcn is a function - this function will be wired as an ng-click for each data element. It will receive the element itself as well as its index in the array.  
-- Options is an object - the available options slightly vary depending on the directive. Refer to the table below for details.
+- Options is an object - the available options slightly vary depending on the directive. Refer to the options section below for details.
 - Bar, dot, and circle graphs take a width and height, while the pie chart takes a radius.
 
 Example directive:  
@@ -31,14 +31,28 @@ Options are optional - if not provided then default settings will apply. The fol
 
 |Option | Description |
 |--------| :------------- |
-| barcolor, dotcolor, piecolor, textcolor| Receives an array of hex color codes as strings. It can be any length - if shorter than the data set, it will automatically be repeated over. If not provided, the default blue color will be applied |
-| bg | Receives an image url to be used as the background of the graph |
+| barcolor, dotcolor, piecolor, textcolor| Receives an array of colors/hex codes as strings. It can be any length - if shorter than the data set, it will automatically be repeated over. If not provided, the default blue color will be applied |
+| bg | Receives an image url (string) to be used as the background of the graph |
 | bg_dot | Receives an object with icon and size properties to set the background of the dots in the dot graph. Example: {icon: (url), size: (number)} |
 | datafont, fontsize, labelfont | Receives a number to set the font size |
 | factor | Receives a number to scale the font up by |
 | inner| Receives a number to set the inner circle radius where the labels are |
 | label | Receives a boolean to display or hide the labels |
 | labelmargin | Receives a number to set the margin between the labels and the graph |
+| sideways | Receives a boolean to set the graph sideways or normal |
+
+Example:
+```javascript
+options = {
+	barcolor: ['black', '#fff', 'blue'],
+	bg_dot: {
+		icon: 'http://myimage.png',
+		size: 10
+	},
+	datafont: 20,
+	sideways: true
+};
+```
 
 The following table details out exactly what options each graph type takes:
 
@@ -49,53 +63,6 @@ The following table details out exactly what options each graph type takes:
 | Circle | barcolor, textcolor, inner, label, fontsize |
 | Pie | piecolor, textcolor, factor |
 
-Include script tag with link to file in html. Angular must also be included.
-Inject as dependency into angular app.
+####Author
+[Justin Kim](https://github.com/jkim430)
 
-Attributes:
-
-1. Bar Graph:
-	- data: Array, can just be numbers, or objects with number and string props
-	- width & height: dimensions of grid
-	- fcn: pass in a fcn to trigger on ng click. will receive element and index
-	- options:
-		- barcolor: Array of colors (strings)
-		- textcolor: Array of colors
-		- bg: url of bg image for grid
-		- sideways: Boolean
-		- labelfont: font size of label
-		- labelmargin: space between labels and graph
-		- datafont: font size of data;
-
-2. Dot Graph:
-	- data: Array
-	- width & height
-	- fcn: pass in a fcn to trigger on ng click. will receive element and index
-	- options:
-		- dotcolor: Array of colors
-		- textcolor
-		- bg
-		- bg_dot: Object with icon (img url) and size props
-		- labelfont
-		- labelmargin
-		- datafont
-
-3. Circle Graph:
-	- data: Array
-	- width & height
-	- fcn: pass in a fcn to trigger on ng click. will receive element and index
-	- options:
-		- barcolor
-		- textcolor
-		- inner: set radius of inner circle for labels
-		- label: boolean to show labels
-		- fontsize: number
-
-4. Pie Chart:
-	- data: Array
-	- radius
-	- fcn
-	- options:
-		- piecolor
-		- textcolor
-		- factor: amount to increase font by;
