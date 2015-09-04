@@ -1,6 +1,6 @@
 {
     "name": "ui-dv",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Data visualization with AngularJS",
     "main": "ui.dv.js",
     "scripts": {

@@ -1,12 +1,15 @@
 ##UI-DV
 
 ####What is it?
+
 UI-DV is an angular data visualization library. It has pre-set directives that are extensive and configurable for easy injection into your app.
 
 ####Installation & Setup
+
 Run ````npm install ui-dv```` and inject "ui-dv" as a dependency into your angular app. Don't forget to include the script tag for ui.dv.js in your html.
 
 ####Documentation
+
 Every directive has the following basic attributes: data, fcn, and options.  
 - Data is an array - the elements can be simply numbers, or they can be objects with number and string properties. It does not matter what you call the keys for the objects, but one value has to be a string and the other a number. The strings will be used as labels on the graph.  
 ```javascript
@@ -27,6 +30,7 @@ $scope.options = {sideways: true};
 ```
 
 #####Options
+
 Options are optional - if not provided then default settings will apply. The following table provides a detailed description of what each option does and the type of data it receives:
 
 |Option | Description |
@@ -64,5 +68,6 @@ The following table details out exactly what options each graph type takes:
 | Pie | piecolor, textcolor, factor |
 
 ####Author
+
 [Justin Kim](https://github.com/jkim430)
 
