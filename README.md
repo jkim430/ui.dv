@@ -28,6 +28,18 @@ $scope.options = {sideways: true};
 ```
 
 #####Options
+Options are optional - if not provided then default settings will apply. The following table provides a detailed description of what each option does and the type of data it receives:
+
+|Option | Description |
+|--------| :------------- |
+| barcolor, dotcolor, piecolor, textcolor| Receives an array of hex color codes as strings. It can be any length - if shorter than the data set, it will automatically be repeated over. If not provided, the default blue color will be applied |
+| bg | Receives an image url to be used as the background of the graph |
+| bg_dot | Receives an object with icon and size properties to set the background of the dots in the dot graph. Example: {icon: (url), size: (number)} |
+| datafont, fontsize, labelfont | Receives a number to set the font size |
+| factor | Receives a number to scale the font up by |
+| inner| Receives a number to set the inner circle radius where the labels are |
+| label | Receives a boolean to display or hide the labels |
+| labelmargin | Receives a number to set the margin between the labels and the graph |
 
 The following table details out exactly what options each graph type takes:
 
