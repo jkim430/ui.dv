@@ -28,11 +28,13 @@ $scope.options = {sideways: true};
 ```
 
 The following table details out exactly what options each graph type takes:
-|Graph Type| barcolor (array) | textcolor (array) | dotcolor (array) | bg (url) | bg_dot ({icon: (url), size: (number)})| sideways (boolean) | labelfont (number) | labelmargin (number) | datafont (number) | textcolor | barcolor | textcolor | inner |
-|--------| :------------- |:-------------|
-| Grassland  | Fox     | Turtle |
-| Desert | Crocodile, Lion      | Giraffe, Elephant     |
-| Ice | Wolf| Penguin, Deer, Beaver    |
+
+|Graph Type| Options |
+|--------| :------------- |
+| Bar  | barcolor, textcolor, bg, sideways, labelfont, labelmargin, datafont |
+| Dot | dotcolor, textcolor, bg, bg_dot, labelfont, labelmargin, datafont  |
+| Circle | barcolor, textcolor, inner, label, fontsize |
+| Pie | piecolor, textcolor, factor |
 
 Include script tag with link to file in html. Angular must also be included.
 Inject as dependency into angular app.
