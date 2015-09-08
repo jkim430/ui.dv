@@ -2,7 +2,7 @@
 
 ####What is it?
 
-UI-DV is an angular data visualization library. It has pre-set directives that are extensive and configurable for easy injection into your app.
+UI-DV is an angular data visualization library. It has pre-set directives for various graphs (bar, dot, circle bar, pie chart) that are extensive and configurable for easy injection into your app.
 
 ####Installation & Setup:
 
