@@ -60,12 +60,12 @@ options = {
 
 The following table details out exactly what options each graph type takes:
 
-|Graph Type| Options |
-|--------| :------------- |
-| Bar  | barcolor, textcolor, bg, sideways, labelfont, labelmargin, datafont |
-| Dot | dotcolor, textcolor, bg, bg_dot, labelfont, labelmargin, datafont  |
-| Circle | barcolor, textcolor, inner, label, fontsize |
-| Pie | piecolor, textcolor, factor |
+|Graph Type| Options | Image |
+|--------| :------------- | :-------------: |
+| Bar <bar-graph>  | barcolor, textcolor, bg, sideways, labelfont, labelmargin, datafont | ![](http://s27.postimg.org/e5f7ln9cj/Screen_Shot_2015_09_03_at_12_18_25_PM.png) |
+| Dot <dot-graph> | dotcolor, textcolor, bg, bg_dot, labelfont, labelmargin, datafont  | ![](http://s27.postimg.org/gqpdmwo43/Screen_Shot_2015_09_03_at_12_07_39_PM.png) |
+| Circle <circle-graph> | barcolor, textcolor, inner, label, fontsize | ![](http://s27.postimg.org/74vt6lwyb/Screen_Shot_2015_09_03_at_12_10_47_PM.png) |
+| Pie <pie-chart> | piecolor, textcolor, factor | ![](http://s27.postimg.org/wz5lwdwyb/Screen_Shot_2015_09_03_at_12_13_32_PM.png) |
 
 ####Author:
 
